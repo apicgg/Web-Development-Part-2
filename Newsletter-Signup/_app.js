@@ -7,7 +7,7 @@ const client = require('@mailchimp/mailchimp_marketing');
 const app = express();
 
 client.setConfig({
-  apiKey: '6dd53017a8b2bc17961ad21779b3f504-us14',
+  apiKey: '6dd53017a8b2bc17961ad21779b3f504-us14', // TODO - Hide api key with dotenv
   server: 'us14',
 });
 
