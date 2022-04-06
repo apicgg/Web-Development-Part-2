@@ -43,9 +43,9 @@ app.post('/', function (req, res) {
     });
 
     if (response.statusCode === 200) {
-      res.send('Succesfully subscribing to our Newsletters');
+      res.sendFile(__dirname + '/success.html');
     } else {
-      res.send('Subcribing failed, please try again');
+      res.sendFile(__dirname + '/failure.html');
     }
 
     console.log(response);
